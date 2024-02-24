@@ -1,0 +1,81 @@
+//Paleta de colores
+
+$main: #001e4d;
+$white: #fff;
+$black: #222;
+$correct:#9aeabc;
+$wrong:#ff9393;
+$gray: #cfcfcf;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+body{
+    background-color:$main;
+}
+
+.app{
+    background-color: $white;
+    width: 600px;
+    margin: 100px auto 0;
+    padding: 35px 20px 50px;
+    border-radius: 15px;
+
+    h1{
+        color: $main;
+        padding-bottom: 10px;
+        border-bottom: solid 2px $gray;
+    }
+    h2{
+        color: $main;
+        margin-top: 10px;
+    }
+}
+
+#answerButtons{
+    .btn{
+        width: 100%;
+        margin-top: 10px;
+        border: 2px solid $gray;
+        padding: 10px 20px;
+        text-align: start;
+        background-color: $white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition:ease-in 0.2s;
+        &.correct{
+            background-color: $correct;
+        }
+        &.incorrect{
+            background-color: $wrong;
+        }
+        &:disabled{
+            cursor: not-allowed;
+        }
+        &:hover:not(disabled){
+            color: $white;
+            background-color: #222;
+            border: #222 2px solid;
+        }
+    }
+}
+
+#next-btn{
+    margin:25px auto 0;
+    border: none;
+    padding: 10px 35px;
+    text-align: start;
+    background-color: $main;
+    color:$white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+

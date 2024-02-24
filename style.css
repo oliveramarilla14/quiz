@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #001e4d;
+}
+
+.app {
+  background-color: #fff;
+  width: 600px;
+  margin: 100px auto 0;
+  padding: 35px 20px 50px;
+  border-radius: 15px;
+}
+.app h1 {
+  color: #001e4d;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #cfcfcf;
+}
+.app h2 {
+  color: #001e4d;
+  margin-top: 10px;
+}
+
+#answerButtons .btn {
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid #cfcfcf;
+  padding: 10px 20px;
+  text-align: start;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+#answerButtons .btn.correct {
+  background-color: #9aeabc;
+}
+#answerButtons .btn.incorrect {
+  background-color: #ff9393;
+}
+#answerButtons .btn:disabled {
+  cursor: not-allowed;
+}
+#answerButtons .btn:hover:not(disabled) {
+  color: #fff;
+  background-color: #222;
+  border: #222 2px solid;
+}
+
+#next-btn {
+  margin: 25px auto 0;
+  border: none;
+  padding: 10px 35px;
+  text-align: start;
+  background-color: #001e4d;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}/*# sourceMappingURL=style.css.map */
